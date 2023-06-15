@@ -36,20 +36,6 @@ registerMicroApps(
       activeRule: '/react15',
     },
     {
-      name: 'vue',
-      entry: '//localhost:7101',
-      container: '#subapp-viewport',
-      loader,
-      activeRule: '/vue',
-    },
-    {
-      name: 'angular9',
-      entry: '//localhost:7103',
-      container: '#subapp-viewport',
-      loader,
-      activeRule: '/angular9',
-    },
-    {
       name: 'purehtml',
       entry: '//localhost:7104',
       container: '#subapp-viewport',
@@ -57,11 +43,11 @@ registerMicroApps(
       activeRule: '/purehtml',
     },
     {
-      name: 'vue3',
+      name: 'umi4',
       entry: '//localhost:7105',
       container: '#subapp-viewport',
       loader,
-      activeRule: '/vue3',
+      activeRule: '/umi4',
     },
   ],
   {

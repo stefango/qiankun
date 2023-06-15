@@ -19,3 +19,7 @@ package-lock.json
 .eslintcache
 .history
 .now
+./src/sandbox/globals.ts
+./src/version.ts
+node_modules/
+*.log
