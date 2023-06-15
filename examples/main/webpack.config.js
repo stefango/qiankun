@@ -5,7 +5,7 @@ module.exports = {
   entry: process.env.MODE === 'multiple' ? './multiple.js' : './index.js',
   devtool: 'source-map',
   devServer: {
-    open: true,
+    open: false,
     port: '7099',
     clientLogLevel: 'warning',
     disableHostCheck: true,

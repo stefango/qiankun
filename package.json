@@ -30,41 +30,38 @@
     "lib"
   ],
   "scripts": {
+    "i": "pnpm bootstrap",
     "examples:install": "npm-run-all --serial build install:*",
     "examples:start": "npm-run-all --parallel start:*",
     "examples:start-multiple": "run-p start-main-multiple start:react15 start:vue",
-    "install:main": "cd examples/main && yarn",
-    "start:main": "cd examples/main && yarn start",
-    "start-main-multiple": "cd examples/main && yarn start:multiple",
-    "install:react16": "cd examples/react16 && yarn",
-    "start:react16": "cd examples/react16 && yarn start",
-    "install:react15": "cd examples/react15 && yarn",
-    "start:react15": "cd examples/react15 && yarn start",
-    "install:vue": "cd examples/vue && yarn",
-    "start:vue": "cd examples/vue && yarn start",
-    "install:angular9": "cd examples/angular9 && yarn",
-    "start:angular9": "cd examples/angular9 && yarn serve:qiankun",
-    "install:purehtml": "cd examples/purehtml && yarn",
-    "start:purehtml": "cd examples/purehtml && yarn start",
-    "install:vue3": "cd examples/vue3 && yarn",
-    "start:vue3": "cd examples/vue3 && yarn start",
+    "install:main": "cd examples/main && pnpm i",
+    "start:main": "cd examples/main && pnpm start",
+    "start-main-multiple": "cd examples/main && pnpm start:multiple",
+    "install:react16": "cd examples/react16 && pnpm i",
+    "start:react16": "cd examples/react16 && pnpm start",
+    "install:react15": "cd examples/react15 && pnpm i",
+    "start:react15": "cd examples/react15 && pnpm start",
+    "install:purehtml": "cd examples/purehtml && pnpm i",
+    "start:purehtml": "cd examples/purehtml && pnpm start",
+    "install:umi4": "cd examples/umi4 && pnpm i",
+    "start:umi4": "cd examples/umi4 && pnpm start",
     "build": "father-build",
     "release": "np --no-cleanup --yolo --no-publish",
-    "prepublishOnly": "yarn ci",
-    "lint": "yarn lint:js && yarn lint:prettier",
+    "prepublishOnly": "pnpm ci",
+    "lint": "pnpm lint:js && pnpm lint:prettier",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
-    "lint:fix": "yarn lint:js -- --fix",
+    "lint:fix": "pnpm lint:js -- --fix",
     "lint:prettier": "prettier -c ./src/**/*",
     "prettier": "prettier --write ./src/**/*",
     "docs:dev": "dumi dev",
     "docs:build": "dumi build",
-    "ci": "yarn lint && yarn build && yarn test",
+    "ci": "pnpm lint && pnpm build && pnpm test",
     "test": "cross-env NODE_ENV=test jest"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
+      "pre-push": "pnpm test"
     }
   },
   "lint-staged": {
@@ -72,7 +69,7 @@
       "prettier -w"
     ],
     "**/*.{js,ts}": [
-      "yarn lint:fix"
+      "pnpm lint:fix"
     ]
   },
   "jest": {
