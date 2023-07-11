@@ -111,6 +111,7 @@
     "babel-plugin-import": "^1.12.1",
     "cross-env": "^7.0.2",
     "dumi": "^1.1.0-beta.24",
+    "eslint": "^8.44.0",
     "father-build": "^1.7.0",
     "globals": "^13.17.0",
     "husky": "^2.3.0",
