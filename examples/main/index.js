@@ -85,7 +85,7 @@ setGlobalState({
 /**
  * Step3 设置默认进入的子应用
  */
-setDefaultMountApp('/react16');
+setDefaultMountApp('/umi4');
 
 /**
  * Step4 启动应用
