@@ -1,20 +1,23 @@
 {
   "name": "umi4-app",
   "private": true,
-  "author": "za-xuzili <zili.xu@zatech.com>",
+  "author": "",
   "scripts": {
     "dev": "pnpm max dev",
     "build": "pnpm max build",
     "postinstall": "pnpm max setup",
     "setup": "pnpm max setup",
-    "start": "PORT=7105 pnpm run dev"
+    "start": "cross-env PORT=7105 pnpm run dev"
   },
   "dependencies": {
-    "@umijs/max": "^4.0.71"
+    "@umijs/max": "^4.0.71",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "shared": "workspace:*"
   },
   "devDependencies": {
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^17.0.62",
+    "@types/react-dom": "^17.0.20",
     "sass": "^1.63.4",
     "typescript": "^5.0.3"
   }

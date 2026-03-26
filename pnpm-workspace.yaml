@@ -1,0 +1,11 @@
+packages:
+  # all packages in subdirs of packages/
+  # - 'packages/**'
+  - "examples/main/**"
+  - "examples/purehtml/**"
+  - "examples/react15/**"
+  - "examples/react16/**"
+  - "examples/shared/**"
+  - "examples/umi4/**"
+  # exclude packages that are inside test directories
+  - "!**/test/**"

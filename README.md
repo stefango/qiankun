@@ -61,57 +61,11 @@ And on top of these, it offers:
 $ yarn add qiankun  # or npm i qiankun
 ```
 
-## 📖 Documentation
-
-You can find the Qiankun documentation [on the website](https://qiankun.umijs.org/)
-
-Check out the [Getting Started](https://qiankun.umijs.org/guide/getting-started) page for a quick overview.
-
-The documentation is divided into several sections:
-
-- [Tutorial](https://qiankun.umijs.org/cookbook)
-- [API Reference](https://qiankun.umijs.org/api)
-- [FAQ](https://qiankun.umijs.org/faq)
-- [Community](https://qiankun.umijs.org/#-community)
-
-## 💿 Examples
-
-Inside the `examples` folder, there is a sample Shell app and multiple mounted Micro FE apps. To get it running, first clone `qiankun`:
-
+## Start
 ```shell
-$ git clone https://github.com/umijs/qiankun.git
-$ cd qiankun
-```
-
-Now install and run the example:
-
-```shell
-$ yarn install
-$ yarn examples:install
-$ yarn examples:start
+$ pnpm i
+$ pnpm start:main // start master app
+$ pnpm start:umi4 // start sub app (umi4)
 ```
 
 Visit `http://localhost:7099`.
-
-![](./examples/example.gif)
-
-## 🎯 Roadmap
-
-See [Qiankun 3.0 Roadmap](https://github.com/umijs/qiankun/discussions/1378)
-
-## 👥 Contributors
-
-Thanks to all the contributors!
-
-<a href="https://github.com/umijs/qiankun/graphs/contributors">
-  <img src="https://opencollective.com/qiankun/contributors.svg?width=960&button=false" alt="contributors" />
-</a>
-
-## 🎁 Acknowledgements
-
-- [single-spa](https://github.com/CanopyTax/single-spa) What an awesome meta-framework for micro-frontends!
-- [import-html-entry](https://github.com/kuitos/import-html-entry/) An assets loader that supports html entry.
-
-## 📄 License
-
-Qiankun is [MIT licensed](./LICENSE).
